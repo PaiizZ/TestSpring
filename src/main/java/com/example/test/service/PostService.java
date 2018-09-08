@@ -13,4 +13,5 @@ public class PostService {
     public Post getPost(String id) {
         return repository.getPost(id);
     }
+    public int createPost(Post post) { return repository.createPost(post); }
 }
