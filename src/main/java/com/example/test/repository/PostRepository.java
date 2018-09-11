@@ -35,7 +35,12 @@ public class PostRepository {
     }
 
     public int deletePost(String id){
-        String sql = "DELETE FROM post WHERE post.id = ?";
+        String sql = "DELETE FROM post WHERE id = ?";
         return jdbcTemplate.update(sql, id);
+    }
+
+    public int updatePost(String id, Post post){
+        String sql = "UPDATE post SET topic = ?, description = ?, content = ? WHERE id = ?";
+        return jdbcTemplate.update(sql, post.getTopic(), post.getDescription(), post.getContent(), id);
     }
 }

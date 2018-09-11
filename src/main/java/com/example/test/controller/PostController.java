@@ -27,10 +27,18 @@ public class PostController {
         return new ResponseEntity<>(postService.createPost(post), HttpStatus.OK);
     }
 
-    @DeleteMapping("v1/deletepost/{postId}")
-    public  ResponseEntity<Integer> deletePost(
+    @DeleteMapping("/v1/deletepost/{postId}")
+    public ResponseEntity<Integer> deletePost(
             @PathVariable("postId") String postId
     ) {
         return new ResponseEntity<>(postService.deletePost(postId), HttpStatus.OK);
+    }
+
+    @PutMapping("/v1/updatepost/{postId}")
+    public ResponseEntity<Integer> updatePost(
+            @PathVariable("postId") String postId,
+            @RequestBody Post post
+    ) {
+        return new ResponseEntity<>(postService.updatePost(postId, post), HttpStatus.OK);
     }
 }

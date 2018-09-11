@@ -15,4 +15,5 @@ public class PostService {
     }
     public int createPost(Post post) { return repository.createPost(post); }
     public int deletePost(String id) { return repository.deletePost(id); }
+    public int updatePost(String id, Post post) { return repository.updatePost(id, post); }
 }
