@@ -33,4 +33,9 @@ public class PostRepository {
         String sql = "INSERT into post (id, topic, content, description) values(?,?,?,?)";
         return jdbcTemplate.update(sql, new Object[]{UUID.randomUUID().toString(), post.getTopic(), post.getContent(), post.getDescription()});
     }
+
+    public int deletePost(String id){
+        String sql = "DELETE FROM post WHERE post.id = ?";
+        return jdbcTemplate.update(sql, id);
+    }
 }
