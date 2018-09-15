@@ -1,4 +1,7 @@
 # TestSpring
 
-Start projrct by https://start.spring.io/ 
-Set dependencies : Web Actuator Lombok
+###Start projrct by https://start.spring.io/ 
+###Set dependencies 
+Web for Rest API 
+Actuator 
+Lombok
