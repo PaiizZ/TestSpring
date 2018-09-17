@@ -4,4 +4,4 @@
 ### Set dependencies 
 Web for Rest API 
 Actuator 
-Lombok
+Lombok for getter and setter method
