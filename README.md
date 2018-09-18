@@ -2,6 +2,6 @@
 
 ### Start projrct by https://start.spring.io/ 
 ### Set dependencies 
-Web for Rest API 
-Actuator 
-Lombok for getter and setter method
+- Web : Rest API 
+- Actuator : Help your monitor and manage your application
+- Lombok : getter and setter method
